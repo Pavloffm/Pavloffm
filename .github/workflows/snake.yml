@@ -5,19 +5,40 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Generate snake SVG
-        uses: dahan8473/snake-and-commits@4ec3eec8531727c9679cd9f8e1c7d60ba1dc7b23
+        uses: Pavloffm/snake-and-commits@4ec3eec8531727c9679cd9f8e1c7d60ba1dc7b23
         with:
           github_user: ${{ github.repository_owner }}
           output: dist/snake.svg
           theme: green
+
+      - name: Upload generated SVG
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: snake-svg
+          path: dist/snake.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download generated SVG
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+        with:
+          name: snake-svg
+          path: dist
 
       - name: Publish SVG to output branch
         env:

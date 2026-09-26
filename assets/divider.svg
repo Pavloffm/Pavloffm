@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 18" fill="none">
+  <defs>
+    <linearGradient id="divider-line" x1="0" y1="9" x2="1200" y2="9" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b949e" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#8b949e" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#ffd257" stop-opacity="0.8"/>
+      <stop offset="0.65" stop-color="#8b949e" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b949e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 9h1176" stroke="url(#divider-line)" stroke-width="1"/>
+  <path d="m600 3 6 6-6 6-6-6 6-6Z" fill="#ffd257"/>
+  <circle cx="600" cy="9" r="1.5" fill="#fff2c2"/>
+</svg>

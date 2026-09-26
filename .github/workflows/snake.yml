@@ -1,0 +1,53 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake SVG
+        uses: dahan8473/snake-and-commits@4ec3eec8531727c9679cd9f8e1c7d60ba1dc7b23
+        with:
+          github_user: ${{ github.repository_owner }}
+          output: dist/snake.svg
+          theme: green
+
+      - name: Publish SVG to output branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          auth_header="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 --wrap=0)"
+
+          mkdir publish
+          cd publish
+          git init --quiet
+          git remote add origin "https://github.com/${REPOSITORY}.git"
+
+          if git -c "http.extraheader=${auth_header}" ls-remote --exit-code --heads origin output >/dev/null; then
+            git -c "http.extraheader=${auth_header}" fetch --depth=1 origin output
+            git checkout --quiet -b output FETCH_HEAD
+          else
+            git checkout --quiet --orphan output
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp ../dist/snake.svg snake.svg
+          git add snake.svg
+
+          if git diff --cached --quiet; then
+            echo "Snake SVG is unchanged; skipping publish."
+            exit 0
+          fi
+
+          git commit --quiet -m "Update contribution snake"
+          git -c "http.extraheader=${auth_header}" push origin output

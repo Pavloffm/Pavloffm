@@ -657,7 +657,7 @@
 .c51_0 { animation:kc51_0 61.4s linear infinite; }
 @keyframes kc51_1 { 0.0% { fill:#3d2f0e; } 71.774% { fill:#3d2f0e; } 71.824% { fill:#fff2c2; } 71.987% { fill:#fff2c2; } 72.476% { fill:#ffd257; } 73.453% { fill:#c99a1e; } 75.244% { fill:#7a5c14; } 79.592% { fill:#7a5c14; } 79.642% { fill:#1a1710; } 100% { fill:#1a1710; } }
 .c51_1 { animation:kc51_1 61.4s linear infinite; }
-@keyframes kc51_2 { 0.0% { fill:#3d2f0e; } 71.611% { fill:#3d2f0e; } 71.661% { fill:#fff2c2; } 71.824% { fill:#fff2c2; } 72.313% { fill:#ffd257; } 73.29% { fill:#c99a1e; } 75.081% { fill:#7a5c14; } 79.429% { fill:#7a5c14; } 79.479% { fill:#1a1710; } 81.709% { fill:#1a1710; } 81.759% { fill:#fff2c2; } 81.922% { fill:#fff2c2; } 82.41% { fill:#ffd257; } 83.388% { fill:#c99a1e; } 85.179% { fill:#7a5c14; } 89.527% { fill:#7a5c14; } 89.577% { fill:#1a1710; } 100% { fill:#1a1710; } }
+@keyframes kc51_2 { 0.0% { fill:#3d2f0e; } 71.611% { fill:#3d2f0e; } 71.661% { fill:#fff2c2; } 71.824% { fill:#fff2c2; } 72.313% { fill:#ffd257; } 73.29% { fill:#c99a1e; } 75.081% { fill:#7a5c14; } 79.429% { fill:#7a5c14; } 79.479% { fill:#1a1710; } 100% { fill:#1a1710; } }
 .c51_2 { animation:kc51_2 61.4s linear infinite; }
 @keyframes kc51_3 { 0.0% { fill:#7a5c14; } 81.546% { fill:#7a5c14; } 81.596% { fill:#fff2c2; } 81.759% { fill:#fff2c2; } 82.248% { fill:#ffd257; } 83.225% { fill:#c99a1e; } 85.016% { fill:#7a5c14; } 89.364% { fill:#7a5c14; } 89.414% { fill:#1a1710; } 100% { fill:#1a1710; } }
 .c51_3 { animation:kc51_3 61.4s linear infinite; }
@@ -673,6 +673,8 @@
 .c52_1 { animation:kc52_1 61.4s linear infinite; }
 @keyframes kc52_2 { 0.0% { fill:#3d2f0e; } 81.872% { fill:#3d2f0e; } 81.922% { fill:#fff2c2; } 82.085% { fill:#fff2c2; } 82.573% { fill:#ffd257; } 83.55% { fill:#c99a1e; } 85.342% { fill:#7a5c14; } 89.68900000000001% { fill:#7a5c14; } 89.739% { fill:#1a1710; } 100% { fill:#1a1710; } }
 .c52_2 { animation:kc52_2 61.4s linear infinite; }
+@keyframes kc52_3 { 0.0% { fill:#1a1710; } 81.709% { fill:#1a1710; } 81.759% { fill:#fff2c2; } 81.922% { fill:#fff2c2; } 82.41% { fill:#ffd257; } 83.388% { fill:#c99a1e; } 85.179% { fill:#7a5c14; } 89.527% { fill:#7a5c14; } 89.577% { fill:#1a1710; } 100% { fill:#1a1710; } }
+.c52_3 { animation:kc52_3 61.4s linear infinite; }
 @keyframes m1 { 0% { opacity:0; } 0.0% { opacity:1; } 0.326% { opacity:0; } 100% { opacity:0; } }
 .m1 { animation:m1 61.4s steps(1,end) infinite; }
 @keyframes m2 { 0% { opacity:0; } 0.326% { opacity:1; } 0.489% { opacity:0; } 100% { opacity:0; } }
@@ -1090,7 +1092,6 @@
   <rect class="c0_2" x="16" y="54" width="11" height="11" rx="2.5" fill="#1a1710"/>
   <rect class="c0_3" x="16" y="68" width="11" height="11" rx="2.5" fill="#1a1710"/>
   <rect class="c0_4" x="16" y="82" width="11" height="11" rx="2.5" fill="#1a1710"/>
-  <rect class="c0_5" x="16" y="96" width="11" height="11" rx="2.5" fill="#1a1710"/>
   <rect class="c1_0" x="30" y="26" width="11" height="11" rx="2.5" fill="#3d2f0e"/>
   <rect class="c1_1" x="30" y="40" width="11" height="11" rx="2.5" fill="#1a1710"/>
   <rect class="c1_2" x="30" y="54" width="11" height="11" rx="2.5" fill="#3d2f0e"/>
@@ -1451,6 +1452,7 @@
   <rect class="c52_0" x="744" y="26" width="11" height="11" rx="2.5" fill="#7a5c14"/>
   <rect class="c52_1" x="744" y="40" width="11" height="11" rx="2.5" fill="#7a5c14"/>
   <rect class="c52_2" x="744" y="54" width="11" height="11" rx="2.5" fill="#3d2f0e"/>
+  <rect class="c52_3" x="744" y="68" width="11" height="11" rx="2.5" fill="#1a1710"/>
   <text class="lab" x="30" y="14">oct</text>
   <text class="lab" x="86" y="14">nov</text>
   <text class="lab" x="156" y="14">dec</text>

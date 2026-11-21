@@ -4,12 +4,12 @@
 
 <div align="center">
   <h1>𝙃𝙞, 𝙄'𝙢 𝙈𝙮𝙠𝙝𝙖𝙞𝙡𝙤 𝙋𝙖𝙫𝙡𝙤𝙫 <img src="./assets/Waving%20Hand.png" alt="Waving hand" width="36" height="36"></h1>
-  <p>𝗖𝗼𝗺𝗽𝘂𝘁𝗲𝗿 𝗦𝗰𝗶𝗲𝗻𝗰𝗲 𝗠𝗮𝘀𝘁𝗲𝗿'𝘀 𝗦𝘁𝘂𝗱𝗲𝗻𝘁</p>
+  <p>𝗚𝗲𝗻𝗔𝗜 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿</p>
 </div>
 
 ## 𝗔𝗯𝗼𝘂𝘁 𝗺𝗲
 
-I’m a Computer Science master's student interested in Python, generative AI, data science, software engineering, and automation. I’m also exploring DevOps tools and workflows.
+I’m a GenAI Developer and Computer Science master's student. I build AI assistants, LLM applications, and no-code GenAI solutions. My main technologies are Python, TypeScript, React, FastAPI, LangChain, LangGraph, Ollama, ChromaDB, and Docker.
 
 ## 𝗖𝗼𝗻𝘁𝗮𝗰𝘁
 
